@@ -63,6 +63,8 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es 50 y la situación ha cambiado a viva.
         $enana1 = new Enana("Eanana1",0);
         $enana1->pocimaExtra();
+        $this->assertEquals(50, $enana1->getPuntosVida());
+        $this->assertEquals("viva", $enana1->getSituacion());
     }
 }
 ?>
